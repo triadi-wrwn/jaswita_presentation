@@ -1,4 +1,13 @@
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <!-- PAGE 0 -->
+  <div class="section">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <img src="assets/images/logo.png" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
   <!-- PAGE 1 -->
   <div class="section">
     <div class="container">
@@ -376,21 +385,21 @@
               <h4 class="mt-0 mb-1"><b>Graha Jaswita</b></h4>
               Jl. Lenkong Besar No. 135
             </div>
-            <button type="button" class="btn btn-warning" (click)="openDialog()">Lihat Detail</button>
+            <button type="button" class="btn btn-warning" (click)="openDialog(data.gj)">Lihat Detail</button>
           </div>
           <div class="media mt-4">
             <div class="media-body">
               <h4 class="mt-0 mb-1"><b>Jaswita Tourism Center</b></h4>
               Jl. Somawinata, Pasir Kaliki
             </div>
-            <button type="button" class="btn btn-warning">Lihat Detail</button>
+            <button type="button" class="btn btn-warning" (click)="openDialog(data.jtc)">Lihat Detail</button>
           </div>
           <div class="media mt-4">
             <div class="media-body">
               <h4 class="mt-0 mb-1"><b>Café & Resto San Pedo</b></h4>
               Jl. Ambon No 18, Bandung
             </div>
-            <button type="button" class="btn btn-warning">Lihat Detail</button>
+            <button type="button" class="btn btn-warning" (click)="openDialog(data.crsp)">Lihat Detail</button>
           </div>
         </div>
         <div class="col-md-5 offset-md-1">
@@ -399,14 +408,14 @@
               <h4 class="mt-0 mb-1"><b>Gurilaps</b></h4>
               &nbsp;
             </div>
-            <button type="button" class="btn btn-warning">Lihat Detail</button>
+            <button type="button" class="btn btn-warning" (click)="openDialog(data.gurilaps)">Lihat Detail</button>
           </div>
           <div class="media mt-4">
             <div class="media-body">
               <h4 class="mt-0 mb-1"><b>Hotel Grand Preanger</b></h4>
               Jll. Asia Afrika No 81, Bandung
             </div>
-            <button type="button" class="btn btn-warning">Lihat Detail</button>
+            <button type="button" class="btn btn-warning" (click)="openDialog(data.hgp)">Lihat Detail</button>
           </div>
         </div>
       </div>
