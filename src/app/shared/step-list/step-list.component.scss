@@ -1,0 +1,36 @@
+$circle: 20px;
+$line: 100px;
+
+li {
+    position: relative;
+    height: calc(#{$line} + #{$circle});
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: -20px;
+    margin-top: -3px;
+}
+
+li:not(:last-of-type):after {
+    content: '';
+    height: $line;
+    width: 2px;
+    background: orange;
+    display: block;
+    position: absolute;
+    right: -11px;
+    top: 67px;
+}
+
+ul li.list-current-year:before {
+  background: orange;
+}

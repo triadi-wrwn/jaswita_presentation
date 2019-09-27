@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="d-flex justify-content-between">
+        <div class="dialog-title">
+            <h4>Nilai Ekonomis</h4>
+            <h2><b>{{data.content.title}}</b></h2>
+        </div>
+        <div>
+            <button type="button" class="btn btn-warning" mat-dialog-close>kembali</button>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 2.5rem">
+        <div class="col-md-4">
+            <figure class="figure">
+              <img src="assets/images/{{data.content.img1}}" alt="" class="figure-img img-fluid" style="width:80%">
+              <figcaption class="figure-caption"></figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="assets/images/{{data.content.img2}}" alt="" class="figure-img img-fluid" style="width:80%">
+              <figcaption class="figure-caption">{{data.content.address}}</figcaption>
+            </figure>
+        </div>
+        <div class="col-md-7">
+            <h4>Invesment</h4>
+            <h3><b>{{data.content.inv}}</b></h3>
+            <div class="row mt-5">
+                <div class="col-md-6 mt-3">
+                    <h5>Shares Jaswita</h5>
+                    <h3><b>100%</b></h3>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h5>Internal Rate Return - IRR</h5>
+                    <h3><b>18.5%</b></h3>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h5>Debt to Equity Ratio (DER)</h5>
+                    <h3><b>30%</b></h3>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h5>Net Present Value</h5>
+                    <h3><b>Rp 8,594,608,820.00</b></h3>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h5>Profitability Index (PI)</h5>
+                    <h3><b>1.43</b></h3>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h5>Payback Periode (PP)</h5>
+                    <h3><b>5.7 Tahun</b></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

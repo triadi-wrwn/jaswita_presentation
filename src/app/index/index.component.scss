@@ -1,0 +1,42 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal !important;
+}
+
+.img-chart {
+    height: auto;
+    @media screen and (min-width: 1024px) {
+        height: 444px;
+    }
+}
+
+#dev-house {
+    @media screen and (min-width: 1400px) {
+        width: 20%;
+    }
+}
+
+#img-founder {
+    @media screen and (min-width: 1400px) {
+        width: 40%;
+    }
+}
+
+.img-left {
+    @media screen and (min-width: 1400px) {
+        height: 900px;
+    }
+    @media screen and (max-width: 1366px) {
+        height: 625px;
+    }
+}
